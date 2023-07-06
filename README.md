@@ -1,38 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Website: https://delightful-pithivier-78bddc.netlify.app/
 
-## Getting Started
+## Project Name: Metropolitan Museum of Art Collection Viewer
+![image](https://github.com/wtse1225/Artwork-Gallary-MyApp/assets/105259859/b0a04f7f-1556-40f8-ab9e-a86a42388ee5)
 
-First, run the development server:
+### Objective:
+Develop a modern, responsive user interface for searching and viewing data on the publicly available Metropolitan Museum of Art Collection API. The project will utilize React, Next.js, and React Bootstrap to create a solution that allows users to explore and interact with the museum's collection.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Technologies Used:
+- React
+- Next.js
+- React Bootstrap
+- SWR (Stale-While-Revalidate)
+- Bootstrap
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Project Description:
+The Metropolitan Museum of Art Collection Viewer is a web application that provides users with a user-friendly interface for searching and viewing artwork from the museum's collection. The application leverages the power of React, Next.js, and React Bootstrap to create a responsive and interactive experience.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Key Features:
+1. Creating a Next App & Adding 3rd Party Components:
+- Setting up a new Next.js app with the necessary dependencies.
+- Installing additional modules, including SWR, Bootstrap, and React Hook Form.
+- Configuring the CSS files to ensure proper rendering of Bootstrap components.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. MyApp, NavBar & Layout Components:
+- Creating a MainNav component to display a navigation bar with the student's name and links to the Home and Advanced Search pages.
+- Implementing a Layout component to provide a common layout structure for the application.
+- Configuring MyApp to use the Layout component and defining the global fetcher for SWR.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. ArtworkCard & ArtworkCardDetail Components:
+- Developing the ArtworkCard component to display information about a specific artwork based on its object ID.
+- Utilizing SWR to fetch data from the Metropolitan Museum of Art Collection API and handle error conditions.
+- Rendering a Bootstrap Card component with details such as the artwork's image, title, object date, classification, and medium.
+- Adding a button within the ArtworkCard to navigate to the detailed view of the artwork using Next.js's Link component.
+- Creating the ArtworkCardDetail component, which is similar to ArtworkCard but includes additional information such as the artist's name, credit line, and dimensions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The Metropolitan Museum of Art Collection Viewer aims to provide a seamless and visually appealing experience for users to explore the museum's collection. By leveraging the power of React, Next.js, and React Bootstrap, the application offers a modern and responsive interface for searching and viewing artwork.
